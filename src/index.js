@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import {HashRouter as Router} from "react-router-dom";
+import {BrowserRouter as Router} from "react-router-dom";
 
 import TodoContainer from "./functionBased/components/TodoContainer";
 
@@ -8,7 +8,7 @@ import "./functionBased/App.css"
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
+    <Router basename="/react-todo-project">
       <TodoContainer />
     </Router>
   </React.StrictMode>,
